@@ -11,6 +11,7 @@
 		5A2EC45D2BD19916004D18D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2EC45C2BD19916004D18D3 /* ContentView.swift */; };
 		5A2EC45F2BD19917004D18D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2EC45E2BD19917004D18D3 /* Assets.xcassets */; };
 		5A2EC4632BD19917004D18D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2EC4622BD19917004D18D3 /* Preview Assets.xcassets */; };
+		5A2EC46B2BD1994A004D18D3 /* SnapMatchingNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 5A2EC46A2BD1994A004D18D3 /* SnapMatchingNavigation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5A2EC45E2BD19917004D18D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A2EC4602BD19917004D18D3 /* SnapMatchingNavigationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapMatchingNavigationDemo.entitlements; sourceTree = "<group>"; };
 		5A2EC4622BD19917004D18D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A2EC46C2BD199FA004D18D3 /* snap-matching-navigation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "snap-matching-navigation"; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2EC46B2BD1994A004D18D3 /* SnapMatchingNavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +39,7 @@
 		5A2EC44E2BD19916004D18D3 = {
 			isa = PBXGroup;
 			children = (
+				5A2EC46C2BD199FA004D18D3 /* snap-matching-navigation */,
 				5A2EC4592BD19916004D18D3 /* SnapMatchingNavigationDemo */,
 				5A2EC4582BD19916004D18D3 /* Products */,
 			);
@@ -85,6 +89,9 @@
 			dependencies = (
 			);
 			name = SnapMatchingNavigationDemo;
+			packageProductDependencies = (
+				5A2EC46A2BD1994A004D18D3 /* SnapMatchingNavigation */,
+			);
 			productName = SnapMatchingNavigationDemo;
 			productReference = 5A2EC4572BD19916004D18D3 /* SnapMatchingNavigationDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 5A2EC44E2BD19916004D18D3;
+			packageReferences = (
+				5A2EC4692BD1994A004D18D3 /* XCRemoteSwiftPackageReference "snap-matching-navigation" */,
+			);
 			productRefGroup = 5A2EC4582BD19916004D18D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A2EC4692BD1994A004D18D3 /* XCRemoteSwiftPackageReference "snap-matching-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonnickel/snap-matching-navigation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A2EC46A2BD1994A004D18D3 /* SnapMatchingNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A2EC4692BD1994A004D18D3 /* XCRemoteSwiftPackageReference "snap-matching-navigation" */;
+			productName = SnapMatchingNavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A2EC44F2BD19916004D18D3 /* Project object */;
 }
