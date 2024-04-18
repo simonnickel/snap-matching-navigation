@@ -7,6 +7,6 @@ Matching Navigation provides a SwiftUI Container that displays a TabView or Spli
 
 ## Demo
 
-The Demo project shows an example on how to use the package.
+The [demo project](/SnapMatchingNavigationDemo) shows an example on how to use the package.
 
 <img src="/screenshot-iphone.png" height="400"> <img src="/screenshot-ipad.png" height="400">
