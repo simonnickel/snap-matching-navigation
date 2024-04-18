@@ -5,7 +5,9 @@ Matching Navigation provides a SwiftUI Container that displays a TabView or Spli
 > This package is part of the [SNAP](https://github.com/simonnickel/snap-abstract) suite.
 
 
-## TODO
+## Demo
 
-// TODO: ... 
- - Add Documentation
+The Demo project shows an example on how to use the package.
+
+![Screenshot iPad](/screenshot-ipad.png)
+![Screenshot iPhone](/screenshot-iphone.png)
