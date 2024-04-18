@@ -9,5 +9,4 @@ Matching Navigation provides a SwiftUI Container that displays a TabView or Spli
 
 The Demo project shows an example on how to use the package.
 
-![Screenshot iPad](/screenshot-ipad.png)
-![Screenshot iPhone](/screenshot-iphone.png)
+<img src="/screenshot-iphone.png" width="200"> <img src="/screenshot-ipad.png" width="500">
