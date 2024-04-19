@@ -7,7 +7,7 @@
 
 # SnapMatchingNavigation
 
-Matching Navigation provides a SwiftUI Container that displays a TabView or SplitScene, based on the device. 
+Matching Navigation provides a SwiftUI container view that displays a TabView or SplitScene, based on the device. 
 
 [![Documentation][documentation badge]][documentation] 
 
@@ -20,3 +20,34 @@ Matching Navigation provides a SwiftUI Container that displays a TabView or Spli
 The [demo project](/SnapMatchingNavigationDemo) shows an example on how to use the package.
 
 <img src="/screenshot-iphone.png" height="400"> <img src="/screenshot-ipad.png" height="400">
+
+
+## How to use
+
+
+```
+MNavContainer(splitScene: {
+	NavigationSplitView {
+		Text("Sidebar")
+	} content: {
+		Text("Content")
+	} detail: {
+		Text("Detail")
+	}
+}, tabScene: {
+	MNavTabScene(tabs: tabs, selected: $tabSelected, tabScreen: { tab in
+		
+		<View for the tab>
+		
+	})
+})
+```
+
+### MNavContainer
+
+A container that either shows the `SplitScene` or the `TabScene` ViewBuilder based on device.
+
+
+### MNavTabScene
+
+A wrapper around TabView to expose the selected tab as a binding.
