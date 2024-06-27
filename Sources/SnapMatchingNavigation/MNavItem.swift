@@ -13,6 +13,7 @@ public protocol MNavItem {
 	
 	var id: MNavItem.ID { get }
 
+	@MainActor
 	var tabItem: any View { get }
 	
 }
