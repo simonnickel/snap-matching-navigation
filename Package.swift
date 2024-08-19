@@ -21,10 +21,6 @@ let package = Package(
         .target(
             name: "SnapMatchingNavigation"
 		),
-        .testTarget(
-            name: "SnapMatchingNavigationTests",
-            dependencies: ["SnapMatchingNavigation"]
-		),
     ],
 	swiftLanguageVersions: [.version("6")]
 )
