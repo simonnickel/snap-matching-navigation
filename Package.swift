@@ -22,5 +22,5 @@ let package = Package(
             name: "SnapMatchingNavigation"
 		),
     ],
-	swiftLanguageVersions: [.version("6")]
+    swiftLanguageModes: [.version("6")]
 )
